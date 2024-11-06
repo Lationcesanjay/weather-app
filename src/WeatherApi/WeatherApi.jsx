@@ -3,7 +3,10 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import './WeatherApi.css'
-
+import { WiHumidity } from "react-icons/wi";
+import { FaWind } from "react-icons/fa";
+import { MdVisibility } from "react-icons/md";
+import { TiWeatherSunny } from "react-icons/ti";
 export const WeatherApi = () => {
   const [cityName, setcityName] = useState("Mohali");
   const [weatherData, setWeatherData] = useState(null);
@@ -89,17 +92,24 @@ export const WeatherApi = () => {
             <div className="data-box temp">
               <p>{weatherData.main.temp} °C</p>
             </div>
-            <div className="data-box wind">
-              <p>Wind: {weatherData.wind.speed} KM/H</p>
+            <div className=" wind">
+          
+<span className="windicon">  <FaWind /></span>
+              <p> Wind: {weatherData.wind.speed} KM/H</p>
             </div>
-            <div className="data-box humidity">
-              <p>Humidity:     {weatherData.main.humidity} %</p>
+            <div className=" humidity">
+              <span className="humicon"><WiHumidity /></span>
+              <p>Humidity: {weatherData.main.humidity} %</p>
             </div>
-            <div className="data-box visibility">
-              <p>visibility:     {weatherData.visibility} %</p>
+            <div className=" visibility">
+              <span className="Visicon"><MdVisibility /></span>
+              <p>visibility: {weatherData.visibility} %</p>
             </div>
-            <div className="data-box description">
-              <p>description:   {weatherData.weather[0].description}</p>
+            <div className="description">
+              <span className="weaicon">
+                <TiWeatherSunny />
+              </span>
+              <p>description: {weatherData.weather[0].description}</p>
             </div>
           </div>
         ) : (

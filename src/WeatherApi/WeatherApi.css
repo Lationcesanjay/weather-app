@@ -93,7 +93,7 @@
     border-radius: 10px;
     top: 67%;
     left: 10%;
-     display: flex;
+     display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 15px;  
@@ -101,6 +101,12 @@
     box-sizing: border-box;  
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
+ .windicon{
+    color: aqua;
+    font-size: 25px;
+    position: relative;
+    top: 9px;
+  }
 .humidity{
     position: absolute;
     color: rgb(233, 20, 20);
@@ -110,13 +116,20 @@
     border-radius: 10px;
     top: 67%;
     left: 30%;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 15px;  
     text-align: center;  
     box-sizing: border-box;  
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.humicon{
+    color: lime;
+    font-size: 30px;
+    position: relative;
+    top: 9px;
+  
 }
 .visibility{
     position: absolute;
@@ -127,13 +140,20 @@
     border-radius: 10px;
     top: 67%;
     left: 50%;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 15px;  
     text-align: center;  
     box-sizing: border-box; 
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.Visicon{
+    color: blue;
+    font-size: 30px;
+    position: relative;
+    top: 9px;
 }
 .description{
     position: absolute;
@@ -144,13 +164,19 @@
     border-radius: 10px;
     top: 67%;
     left: 70%;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 15px;  
     text-align: center;  
     box-sizing: border-box; 
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.weaicon{
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: 6px;
 }
 
 .formdiv button:hover, .wind:hover,.temp:hover, .description:hover, .humidity:hover, .visibility:hover {
