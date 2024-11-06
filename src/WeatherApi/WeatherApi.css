@@ -1,0 +1,163 @@
+ 
+.headermain {
+    display: flex;
+    background-color: rgb(17, 85, 127);
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    left: 300px;
+     
+}
+
+.innerdiv {
+    display: flex;
+    background-color: rgb(157, 188, 207);
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.formdiv {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+}
+
+.formdiv input {
+    border-radius: 10px;
+    border: 2px solid rgb(34, 125, 195);
+    padding: 5px;
+    margin-right: 10px;
+    background-color: transparent;
+    height: 45px;
+}
+
+.formdiv button {
+    background-color: rgb(34, 125, 195);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+}
+
+.temp {
+    /* background-color: blue; */
+    position: absolute;
+     width: 50%;
+     display: inline;
+    justify-items: center;
+     align-items: center;
+    top: 35%;
+    left: 25%;
+    font-size: 60px;
+     color: black;
+    font-weight: bolder;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+ }
+
+.cityname {
+    position: absolute;
+    margin-top: 45%;
+    width: 200%;
+    height: 50px;
+    display: inline;
+    justify-items: center;
+    align-items: center;
+    color: rgb(20, 67, 124);
+}
+
+.error-alert {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.wind {
+    position: absolute;
+    color: rgb(233, 20, 20);
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    top: 67%;
+    left: 10%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;  
+    text-align: center;  
+    box-sizing: border-box;  
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.humidity{
+    position: absolute;
+    color: rgb(233, 20, 20);
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    top: 67%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;  
+    text-align: center;  
+    box-sizing: border-box;  
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.visibility{
+    position: absolute;
+    color: rgb(233, 20, 20);
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    top: 67%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;  
+    text-align: center;  
+    box-sizing: border-box; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.description{
+    position: absolute;
+    color: rgb(233, 20, 20);
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    top: 67%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;  
+    text-align: center;  
+    box-sizing: border-box; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.formdiv button:hover, .wind:hover,.temp:hover, .description:hover, .humidity:hover, .visibility:hover {
+    transform: scale(1.1);   
+    /* background-color: rgb(50, 50, 50);    */
+}
+
+  
+
+ 
